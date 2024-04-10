@@ -16,7 +16,7 @@ const Form = ({
     const navigate = useNavigate()
 
     const handleSubmit = async(e) => {
-        console.log('data :>> ', data);
+        // console.log('data :>> ', data);
         e.preventDefault()
         const res = await fetch(`https://chatappbackend-ur02.onrender.com/api/${isSignInPage ? 'login' : 'register'}`, {
             method: 'POST',

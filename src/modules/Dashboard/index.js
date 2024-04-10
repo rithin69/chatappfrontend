@@ -20,7 +20,7 @@ const Dashboard = () => {
 	useEffect(() => {
 		socket?.emit('addUser', user?.id);
 		socket?.on('getUsers', users => {
-			console.log('activeUsers :>> ', users);
+			// console.log('activeUsers :>> ', users);
 		})
 		socket?.on('getMessage', data => {
 			setMessages(prev => ({
